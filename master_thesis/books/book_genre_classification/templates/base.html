@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <title>Book Genre Classification</title>
+    <link rel="icon" href="{% static 'images/book.png' %}" />
+    <link rel="stylesheet" type="text/css" href="{%static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/index-style.css' %}" />
+    <!-- sa poxel -->
+  </head>
+  <body id="page-top">
+    <!-- <div id="preloader" class="preloader-container">
+      <div class="book">
+        <div class="inner">
+          <div class="left"></div>
+          <div class="middle"></div>
+          <div class="right"></div>
+        </div>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div> -->
+
+    {% include 'snippets/nav.html' %}
+
+    <div class="content">
+      {% block content %}
+      <!-- content for different pages here -->
+      {% endblock content %}
+    </div>
+
+    {% include 'snippets/js.html' %}
+  </body>
+
+  <!-- Bootstrap core JavaScript -->
+</html>

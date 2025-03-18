@@ -1,0 +1,45 @@
+{% load static %}
+<!-- Styles -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+<link href="{% static 'music/css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'music/css/fontawesome-all.css' %}" rel="stylesheet">
+<link href="{% static 'music/css/swiper.css' %}" rel="stylesheet">
+<link href="{% static 'music/css/magnific-popup.css' %}" rel="stylesheet">
+<link href="{% static 'music/css/styles.css' %}" rel="stylesheet">
+<link href="{% static 'music/css/mystyle.css' %}" rel="stylesheet">
+<link href="{% static 'music/css/simpletextrotator.css' %}" rel="stylesheet"> -->
+
+<link href="{% static '/css/mystyle.css' %}" rel="stylesheet">
+<link href="{% static '/css/bootstrap.css' %}" rel="stylesheet">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top" style="height: 10%; box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;">
+
+    <a class="navbar-brand" style="text-decoration: none;" href=""><font color="#381C10">BOOK GENRE CLASSIFIER</font></a>
+
+    <!-- Mobile Menu Toggle Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- end of mobile menu toggle button -->
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="{% url 'index'%}">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <!-- <a class="nav-link page-scroll" href="#basic-2">CHECK GENRE</a> -->
+                <a class="nav-link page-scroll" href="{% url 'check_genre' %}">CLASSIFY</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="{% url 'login' %}">LOG IN</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="{% url 'log-reg' %}">REGISTER</a>
+            </li>
+        </ul>
+    </div>
+</nav> 
+<!-- end of navbar -->

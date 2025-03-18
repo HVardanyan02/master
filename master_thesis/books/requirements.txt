@@ -1,0 +1,82 @@
+pandas == 2.2.3
+PyPDF2 == 3.0.1
+joblib == 1.4.2
+beautifulsoup4 == 4.12.3
+requests == 2.32.3
+scikit-learn == 1.6.1
+nltk == 3.9.1
+matplotlib == 3.10.0
+seaborn == 0.13.2
+
+
+# def scanning(path, expected_list):
+#     mini, maxi = 100, 0
+#     print("____________________________",os.listdir(path))
+#     for genre_folder in os.listdir(path):
+#         print("Genre folder:::", genre_folder)
+#         genre_path = os.path.join(path, genre_folder)
+#         print("Genre path::: ", genre_path)
+#         if os.path.isdir(genre_path):
+#             for file_name in os.listdir(genre_path):
+#                 print("FILE NAME ", file_name)
+#                 file_path = os.path.join(genre_path, file_name)
+#                 print("*******************", file_path)
+#                 if file_path.endswith(".pdf"):
+#                     with open(file_path, "rb") as filehandle:
+#                         try:
+#                             pdf = PdfReader(filehandle)
+#                         except Exception:
+#                             continue
+#                         pages = len(pdf.pages)
+#                         if pages < mini:
+#                             mini = pages
+#                         if pages > maxi:
+#                             maxi = pages
+#     expected_list.append(mini)
+#     expected_list.append(maxi)
+#     expected_list.append((mini+maxi)/2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

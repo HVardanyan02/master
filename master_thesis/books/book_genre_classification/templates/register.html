@@ -1,0 +1,71 @@
+{% extends './base.html' %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/log-reg-style.css' %}">
+
+<div class="book">
+  <div id="pages" class="pages">
+    <div class="page"><p>Welcome</p></div>
+    <div class="page"></div>
+    <div class="page"><p>Log in</p>
+        <div class="tab-pane fade active show" id="nav-sign-in" role="tabpanel" aria-labelledby="nav-sign-in-tab">
+            <form>
+              <div class="form-group py-3">
+                <label class="mb-2" for="sign-in-username">Username or email address *</label>
+                <input type="text" id="sign-in-username" minlength="2" name="username" placeholder="Your Username"
+                  class="form-control w-100 rounded-3 p-3" required>
+              </div>
+              <div class="form-group pb-3">
+                <label class="mb-2" for="sign-in-password">Password *</label>
+                <input type="password" id="sign-in-password" minlength="2" name="password" placeholder="Your Password"
+                  class="form-control w-100 rounded-3 p-3" required>
+              </div>
+              <div class="d-flex justify-content-between align-items-center py-3">
+                <label>
+                  <input type="checkbox" required class="d-inline">
+                  <span class="label-body">Remember me</span>
+                </label>
+                <a href="#" class="fw-bold">Forgot Password?</a>
+              </div>
+              <button type="submit" name="submit" class="btn btn-dark w-100 my-3">Login</button>
+            </form>
+          </div>
+    </div>
+    <div class="page"></div>
+    <div class="page"><p>Register</p>
+        <div class="tab-pane fade" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab">
+            <form>
+              <div class="form-group py-3">
+                <label class="mb-2" for="register-email">Your email address *</label>
+                <input type="email" id="register-email" minlength="2" name="email" placeholder="Your Email Address"
+                  class="form-control w-100 rounded-3 p-3" required>
+              </div>
+              <div class="form-group pb-3">
+                <label class="mb-2" for="register-password">Password *</label>
+                <input type="password" id="register-password" minlength="2" name="password" placeholder="Your Password"
+                  class="form-control w-100 rounded-3 p-3" required>
+              </div>
+              <div class="py-3">
+                <label>
+                  <input type="checkbox" required class="d-inline">
+                  <span class="label-body">I agree to the <a href="#" class="fw-bold">Privacy Policy</a></span>
+                </label>
+              </div>
+              <button type="submit" name="submit" class="btn btn-dark w-100 my-3">Register</button>
+            </form>
+          </div>
+    </div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% include 'snippets/js.html' %}

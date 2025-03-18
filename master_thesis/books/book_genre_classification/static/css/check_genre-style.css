@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #6f4e37; 
+    color: #f4eae6; 
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container Styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 200px;
+}
+
+/* Tabs Section */
+#basic-2.tabs {
+    padding: 50px 0;
+    background-color: transparent;
+    color: #f4eae6;
+}
+
+/* Header Section */
+#basic-2 h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f4eae6;
+    margin-bottom: 20px;
+}
+
+.p-heading.p-large {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #e6d9ce; 
+    margin-bottom: 40px;
+}
+
+/* Form Styling */
+.up-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.up-form div {
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+}
+
+/* Input Error Messages */
+.up-form div .errorlist {
+    color: #ff4d4f;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* File Upload Text */
+.up-p {
+    font-size: 1rem;
+    color: #d3c0b3;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Button Styling */
+.up-form button {
+    background-color: #a56b45;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.up-form button:hover {
+    background-color: #8c5a37; 
+}
+
+
+/* .drop-zone {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.drop-zone.drag-over {
+    background-color: #f0f8ff;
+    border-color: #000;
+} */
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #basic-2 h2 {
+        font-size: 2rem;
+    }
+
+    .p-heading.p-large {
+        font-size: 1rem;
+    }
+
+    .up-form button {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+}

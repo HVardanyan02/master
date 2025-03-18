@@ -1,0 +1,28 @@
+{% extends './base.html' %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/result-style.css' %}" />
+
+<div class="page-container">
+  <div class="header">
+    <a href="{% url 'index' %}" class="back-button" title="Go Back">
+      <i class="fas fa-backward"></i>
+    </a>
+  </div>
+  <div class="content">
+    <h2 class="title">Your Book's Genre is:</h2>
+    <div class="genre-container">
+      <div class="genre-display">
+        <h3>{{ pred }}</h3>
+      </div>
+    </div>
+  </div>
+  <div class="image-overlay">
+    <img class="image-left" src="{% static 'images/library.jpg' %}" alt="Library"/>
+    <img class="image-right" src="{% static 'images/library.jpg' %}" alt="Library"/>
+  </div>
+</div>
+{% endblock %}
+
+{% include 'snippets/js.html' %}

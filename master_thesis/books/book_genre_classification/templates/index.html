@@ -1,0 +1,73 @@
+{% extends './base.html' %}
+{% load static %}
+
+ <link rel="icon" href="{% static 'images/book.png' %}">
+ <!-- <link rel="stylesheet" href="{% static 'css/index-style.css' %}"> -->
+
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <div id="preloader" class="preloader-container">
+      <div class="book">
+        <div class="inner">
+          <div class="left"></div>
+          <div class="middle"></div>
+          <div class="right"></div>
+        </div>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+
+
+{% block content %}
+<!-- {% if user.is_authenticated %}
+Hi {{ user.username }}!
+{% else %}
+<p>You are not logged in</p>
+<a href="{% url 'login' %}">Log In</a>
+{% endif %} -->
+
+<header id="header" class="header">
+    <div class="header-content">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{% static 'images/books-image.jpg' %}" alt="alternative" style="width: 90%">
+                    </div> 
+                </div>
+                <div class="col-lg-7">
+                    <div class="text-container text-center">
+                        <h4>A book genre classification</h4>
+                        <h5>1. Click the "Classify" button in the menu.</h5>
+                        <h5>2. Click the "Select File" button.</h5>
+                        <h5>3. Upload the PDF e-book.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% endblock %}
+</body>
+</html>
